@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#playArea{
+    position: absolute;
+    left: 500px;
+
+    width: 900px;
+    height: 900px;
+    background-color: paleturquoise;
+}
+
+.enemy{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: palevioletred;
+    z-index: 5;
+}
+
+.tower{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: blueviolet;
+}
+
+.path{
+    background-color: peachpuff;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+}
