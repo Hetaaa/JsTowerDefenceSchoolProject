@@ -10,9 +10,47 @@
 </head>
 <body onmousedown="mouseClick(event)">
 
+    <div id="mapy">
+        <div class="mapa" onclick="map(1)" style="background-image: url(placeholdermap2.png);"></div>
+        <div class="mapa" onclick="map(2)" style="background-image: url(placeholdermap1.png);"></div>
+        <div class="mapa" onclick="map(3)" style="background-image: url(placeholdermap3.png);"></div>
+        <div class="mapa" onclick="map(4)">EDITOR</div>
+    </div>
+
     <div id="playArea">
     </div>
 
+    <div id="przyciski">
+    <div id="przy1" class="guzik" onclick="wybierando(1)">Normal <br> $400</div>
+    <div id="przy2" class="guzik" onclick="wybierando(2)">Snajper <br> $500</div>
+    <div id="przy3" class="guzik" onclick="wybierando(3)">Shotgun <br> $600</div>
+    <div id="przy4" class="guzik" onclick="wybierando(4)">爆弾 <br> $800</div>
+    <div id="przy5" class="guzik" onclick="wybierando(5)">Kisiel <br> $1000</div>
+    <div id='money' class="money">$1000</div>
+    <div id="upgrades">
+        <div id="tower"></div>
+        <div id="dmg" class="upg" onclick="upgs(1)">DMG:</div>
+        <div id="range" class="upg" onclick="upgs(2)">RANGE:</div>
+        <div id="AS" class="upg" onclick="upgs(3)">ATK SPEED:</div>
+        <div id="sell" class="upg" onclick="upgs(4)">SELL FOR: </div>
+    </div>
+    <div id="hp" class="hp">10hp</div>
+    <div id="gameover" class="gameover">
+        <div id="gameoverNapis">Haha Ale intera</div>
+        <div id="gameoverWynik"></div>
+        <div id="gameoverReset" onclick="reset()">reset</div>
+    </div>
+
+
+    <div id="mapaKoniec" onclick="creat()">
+        Zakończ tworzenie mapy
+    </div>
+
+   
+</div>
+
+
+
 </body>
-<script src="skrapyt.pl"></script>
+<script src="skrapyt.js"></script>
 </html>
